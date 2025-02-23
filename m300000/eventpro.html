@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a{
+            border: 2px solid red;
+            width: 200px;
+            padding: 50px;
+        }
+        #b{
+            border: 2px solid red;
+            width: 100px;
+            padding: 50px;
+        }
+        #c{
+            border: 2px solid red;
+            width: 50px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <span>parent</span>
+    <div id="a">
+        <span>child</span>
+        <div id="b">
+            <span>grand child</span>
+            <div id="c">
+                <button>click</button>
+            </div>
+        </div>
+    </div>
+    <script src="./eventpro.js"></script>
+</body>
+</html>

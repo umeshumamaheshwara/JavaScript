@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">click</button>
+    <button id="btn1">check</button>
+    <button id="back">back</button>
+    <script>
+
+        //screen
+        console.log(screen.width);
+        console.log(screen.height);
+        console.log(screen.availHeight);
+        console.log(screen.availWidth);
+        
+        //location
+        let btn=document.querySelector("#btn")
+        btn.addEventListener("click",()=>{
+            location.href="counter.html"
+        })
+
+        let btn1=document.querySelector("#btn1")
+        btn1.addEventListener("click",()=>{
+            location.assign("digitalclock.html")
+        })
+
+        console.log(location.pathname);
+        console.log(location.protocol);
+
+        //history
+
+
+
+        
+        let back=document.querySelector("#back")
+        back.addEventListener("click",()=>{
+            history.back()
+        })
+        
+        //navigator
+
+        console.log(navigator.language);
+        console.log(navigator.onLine);
+        console.log(navigator.platform);
+        
+        
+        
+
+
+        
+         
+        
+        
+    </script>
+</body>
+</html>
